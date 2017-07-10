@@ -17,7 +17,8 @@
 addpath(genpath('.'));
 
 % Set paths (always end directory paths with a forward/back slash)
-out_dir = '/cs/research/vision/hcp/Auro/iqt.github_test/'; % typically root dir where results are stored
+% out_dir = '/cs/research/vision/hcp/Auro/iqt.github_test/'; % typically root dir where results are stored
+out_dir = '~/Documents/HCP_Results/';  % typically root dir where results are stored
 train_dir = [out_dir 'TrainingData/']; % dir where training sets will be saved
 
 % Check

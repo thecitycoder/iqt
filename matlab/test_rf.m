@@ -15,9 +15,11 @@
 addpath(genpath('.'));
 
 % Set paths (always end directory paths with a forward/back slash)
-inp_dir = '/cs/research/vision/hcp/HCP/'; % dir where DWI data is stored (eg HCP data root)
+% inp_dir = '/cs/research/vision/hcp/HCP/'; % dir where DWI data is stored (eg HCP data root)
+inp_dir = '~/Documents/HCP_DWI_Data/'; % dir where DWI data is stored (eg HCP data root)
 % out_dir = '/cs/research/vision/hcp/Auro/iqt.github_test/';  % typically root dir where results are stored
-out_dir = '~/Data/ClusterDRIVE01/hcp/Auro/iqt.github_test/';  % typically root dir where results are stored
+% out_dir = '~/Data/ClusterDRIVE01/hcp/Auro/iqt.github_test/';  % typically root dir where results are stored
+out_dir = '~/Documents/HCP_Results/';  % typically root dir where results are stored
 trees_dir = [out_dir 'TrainingData/']; %'./trees/'; % dir where RF trees are saved (default: precomputed trees dir)
 % list of test data subjects
 data_folders = {'904044', '165840'}; %, '889579', '713239', '899885', '117324', '214423', '857263'};
