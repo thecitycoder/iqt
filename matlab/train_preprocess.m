@@ -18,7 +18,7 @@ addpath(genpath('.'));
 % Set paths (always end directory paths with a forward/back slash)
 % inp_dir = '/cs/research/vision/hcp/HCP/'; % dir where DWI data is stored (eg HCP data root)
 % inp_dir = '~/Documents/HCP_DWI_Data/'; % dir where DWI data is stored (eg HCP data root)
-inp_dir = '~/SAN/vision/hcp/HCP.S900/'; % dir where DWI data is stored (eg HCP data root)
+inp_dir = '/SAN/vision/hcp/HCP.S900/'; % dir where DWI data is stored (eg HCP data root)
 out_dir = '~/Documents/HCP_Results/';  % typically root dir where results are stored
 % out_dir = '/cs/research/vision/hcp/Auro/iqt.github_test/';  % typically root dir where results are stored
 train_dir = [out_dir 'TrainingData/']; % dir where training sets will be saved
@@ -60,8 +60,8 @@ compute_dti_respairs(inp_dir, out_dir, data_folders, sub_path, ...
 %% Step 2: create a library of low-res and high-res patches.
 % for each subject, the exhaustive list of all patch pairs are saved in a large
 % matrix.
-compute_patchlib(out_dir, out_dir, data_folders, sub_path, ...
-                 dt_pref, upsample_rate, input_radius);
+% compute_patchlib(out_dir, out_dir, data_folders, sub_path, ...
+%                  dt_pref, upsample_rate, input_radius);
 
 
 %% Step 3: create a training set. 
@@ -69,8 +69,8 @@ compute_patchlib(out_dir, out_dir, data_folders, sub_path, ...
 % pairs with probability 1/settings.subsample_rate.
 % repeat this process settings.no_rnds number of times to create the
 % specified number of separate trainign sets. 
-create_trainingset(out_dir, train_dir, data_folders, sub_path, ...
-                   datasample_rate, no_rnds, upsample_rate, input_radius);
+% create_trainingset(out_dir, train_dir, data_folders, sub_path, ...
+%                    datasample_rate, no_rnds, upsample_rate, input_radius);
 
                
 %%
