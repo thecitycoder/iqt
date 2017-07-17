@@ -17,7 +17,8 @@ addpath(genpath('.'));
 
 % Set paths (always end directory paths with a forward/back slash)
 % inp_dir = '/cs/research/vision/hcp/HCP/'; % dir where DWI data is stored (eg HCP data root)
-inp_dir = '~/Documents/HCP_DWI_Data/'; % dir where DWI data is stored (eg HCP data root)
+% inp_dir = '~/Documents/HCP_DWI_Data/'; % dir where DWI data is stored (eg HCP data root)
+inp_dir = '~/SAN/vision/hcp/HCP.S900/'; % dir where DWI data is stored (eg HCP data root)
 out_dir = '~/Documents/HCP_Results/';  % typically root dir where results are stored
 % out_dir = '/cs/research/vision/hcp/Auro/iqt.github_test/';  % typically root dir where results are stored
 train_dir = [out_dir 'TrainingData/']; % dir where training sets will be saved
